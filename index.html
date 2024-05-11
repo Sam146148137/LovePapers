@@ -53,23 +53,22 @@
 <p class="p1">Drag the papers 😃!</p>
 </div>
 <!-- partial -->
-
+<script  src="./heartScript.js"></script>
 <script>
-  // Function to check if the user is on a mobile device
-  function isMobileDevice() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  }
-
-  // Load appropriate script based on device
-  if (isMobileDevice()) {
-    document.write('<script src="./mobile.js"><\/script>');
+  // Check if the user is on a mobile device
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    const script = document.createElement('script');
+    script.src = './mobile.js';
+    document.head.appendChild(script);
   } else {
-    document.write('<script src="./script.js"><\/script>');
+    const script = document.createElement('script');
+    script.src = './script.js';
+    document.head.appendChild(script);
   }
 </script>
 
 
 <!--  <script  src="./script.js"></script>-->
-  <script  src="./heartScript.js"></script>
+
 </body>
 </html>

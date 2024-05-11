@@ -87,3 +87,11 @@ papers.forEach(paper => {
   const p = new Paper();
   p.init(paper);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  let audio = document.getElementById("audio");
+
+  document.addEventListener("click", function () {
+    audio.play();
+  });
+});
