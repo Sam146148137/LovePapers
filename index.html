@@ -53,7 +53,9 @@
 <p class="p1">Drag the papers 😃!</p>
 </div>
 <!-- partial -->
+
 <script  src="./heartScript.js"></script>
+<script  src="./script.js"></script>
 <script>
   // Check if the user is on a mobile device
   if (window.matchMedia("(max-width: 768px)").matches) {
@@ -62,13 +64,10 @@
     document.head.appendChild(script);
   } else {
     const script = document.createElement('script');
-    script.src = './script.js';
+    script.src = './web.js';
     document.head.appendChild(script);
   }
 </script>
-
-
-<!--  <script  src="./script.js"></script>-->
 
 </body>
 </html>
