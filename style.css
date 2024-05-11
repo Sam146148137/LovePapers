@@ -24,24 +24,8 @@ body {
 
   transform: rotateZ(-5deg);
   box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
-
   position: absolute;
 }
-
-
-
-/*#content {*/
-/*  visibility: hidden;*/
-/*  opacity: 0;*/
-/*  transition: opacity 0.3s ease; !* Optional: Add transition for smooth reveal *!*/
-/*}*/
-
-/*#content.visible {*/
-/*  visibility: visible;*/
-/*  opacity: 1;*/
-/*}*/
-
-
 
 .paper.heart {
   position: relative;
