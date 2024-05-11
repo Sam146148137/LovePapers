@@ -28,6 +28,21 @@ body {
   position: absolute;
 }
 
+
+
+/*#content {*/
+/*  visibility: hidden;*/
+/*  opacity: 0;*/
+/*  transition: opacity 0.3s ease; !* Optional: Add transition for smooth reveal *!*/
+/*}*/
+
+/*#content.visible {*/
+/*  visibility: visible;*/
+/*  opacity: 1;*/
+/*}*/
+
+
+
 .paper.heart {
   position: relative;
   width: 200px;
@@ -38,14 +53,15 @@ body {
 
 .paper.image {
   padding: 10px;
+  text-align: center; /* Center text horizontally */
 }
 .paper.image p {
   font-size: 30px;
 }
-
-img {
-  max-height: 200px;
-  width: 100%;
+.paper.image img {
+  max-height: 300px;
+  display: block; /* Ensures the image is treated as a block element */
+  margin: 0 auto; /* Centers the image horizontally */
   user-select: none;
 }
 
