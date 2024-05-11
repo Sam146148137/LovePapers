@@ -22,19 +22,19 @@
 <div class="paper image">
   <p> and I fallen in</p>
     <p>Love with You 😍 </p>
-   <img src="images/1.jpeg" />
+   <img src="images/1.jpeg"  alt=""/>
 </div>
 
 <div class="paper image">
   <p>Missing you a lot</p>
-  <img src="images/2.jpeg" />
+  <img src="images/2.jpeg"  alt=""/>
 </div>
 
 <div class="paper image">
   <p>How can be </p>
    <p> someone so cute ❤️ </p>
 
-  <img src="images/3.jpg" />
+  <img src="images/3.jpg"  alt=""/>
 </div>
 
 
@@ -65,9 +65,13 @@
 
   // Load appropriate script based on device
   if (isMobileDevice()) {
-    document.write('<script src="./mobile.js"><\/script>');
+    const mobileScript = document.createElement('script');
+    mobileScript.src = "./mobile.js";
+    document.head.appendChild(mobileScript);
   } else {
-    document.write('<script src="./web.js"><\/script>');
+    const webScript = document.createElement('script');
+    webScript.src = "./web.js";
+    document.head.appendChild(webScript);
   }
 </script>
 
