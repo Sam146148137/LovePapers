@@ -8,12 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Prompt Password
 // Define the correct password
-const correctPassword = "080523"; // Change this to your desired password
+const correctPassword = "080523";
 
 // Function to prompt user for password and show papers if correct
 function requestPasswordAndShowPapers() {
     // Prompt the user for a password
-    const enteredPassword = prompt("Please enter the password:");
+    const enteredPassword = prompt("Our first meeting day 🫣🤭");
 
     // Check if the entered password is correct
     if (enteredPassword === correctPassword) {
@@ -22,10 +22,10 @@ function requestPasswordAndShowPapers() {
         papers.forEach(paper => {
             paper.style.display = "block";
         });
-        alert("Correct password! You can now access the page.");
+        alert("Correct password! You can reveal the Surprise 😃 !");
     } else {
         // If incorrect, display an error message and reload the page
-        alert("Incorrect password! Please try again.");
+        alert("Incorrect password! Please try again 😟.");
         window.location.reload();
     }
 }

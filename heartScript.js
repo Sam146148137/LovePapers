@@ -1,8 +1,8 @@
-var heartBtn = document.getElementsByClassName('heart')[0];
-var TOTAL = 300;
-var hearts = [];
+const heartBtn = document.getElementsByClassName('heart')[0];
+const TOTAL = 300;
+let hearts = [];
 
-var Heart = function () {
+const Heart = function () {
     this.x = 0;
     this.y = 0;
     this.z = 0;
@@ -38,7 +38,7 @@ function addHeart(g) {
 }
 
 function removeHearts() {
-    for (var i = hearts.length; i--;) {
+    for (let i = hearts.length; i--;) {
         document.body.removeChild(hearts[i].div);
     }
     hearts = [];
@@ -69,16 +69,16 @@ function update() {
     }
 }
 
-function init(x, y) {
+function init(count, x, y) {
     removeHearts();
-    createHearts(TOTAL, x, y);
+    createHearts(count, x, y);
 }
 
 heartBtn.addEventListener('click', function (event) {
     createHearts(TOTAL, event.clientX, event.clientY);
 });
 
-var i = 0,
+let i = 0,
     lastTime = 0,
     vendors = ['ms', 'moz', 'webkit', 'o'];
 
@@ -112,5 +112,5 @@ setTimeout(function () {
     var centerY = document.documentElement.clientHeight;
 
     update();
-    init(centerX, centerY);
+    init(500, centerX, centerY);
 }, 200);

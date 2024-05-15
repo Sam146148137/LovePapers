@@ -10,7 +10,7 @@ class Paper {
     prevMouseY = 0;
     velX = 0;
     velY = 0;
-    rotation = Math.random() * 30 - 15;
+    rotation = Math.random() * 40 - 15;
     currentPaperX = 0;
     currentPaperY = 0;
     rotating = false;
