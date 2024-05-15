@@ -8,6 +8,7 @@ body {
 
   background-size: 1000px;
   background-image: url("https://www.psdgraphics.com/wp-content/uploads/2022/01/white-math-paper-texture.jpg");
+  /*background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcHg2MDE4NzUtaW1hZ2Utam9iNjU0XzItbDB1YnUwNTYuanBn.jpg");*/
   background-position: center center;
 }
 
@@ -16,7 +17,8 @@ body {
 }
 
 .paper {
-  background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
+  /*background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");*/
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdJ7wYDVeEluRjImfzNb1-cWdeFcQ-T6mLCOo2pL7Mg6NTymO1JUFSSDr7v7e5zUi0PykdYSjCIDSNkI1TAsINLlekkTbPsVVFyGOcRnsdex8CqhJFY99OXOOzn7OW1EpTLa7vYw6T4w/s1600/paper_horizontal_lines_texture.jpg");
   background-size: 500px;
   background-position: center center;
   padding: 20px 100px;
